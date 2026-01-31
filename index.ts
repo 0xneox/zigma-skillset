@@ -15,7 +15,7 @@
  */
 
 import { z } from 'zod';
-import { validateConfig } from './src/config';
+import { validateConfig } from './src/config.js';
 import type {
   Signal,
   MarketAnalysis,
@@ -25,7 +25,7 @@ import type {
   UserTier,
   TrackedMarket,
   UsageRecord,
-} from './src/types';
+} from './src/types.js';
 
 // Validate configuration on import (only in runtime, not tests)
 if (process.env.NODE_ENV !== 'test') {
@@ -35,10 +35,10 @@ import {
   TIER_LIMITS,
   GLOBAL_LIMITS,
   TOKEN_REQUIREMENTS,
-} from './src/config';
-import { logger } from './src/logger';
-import { zigmaFetch, getMarketCount } from './src/api-client';
-import { postToMoltbook, getMyPosts, getPostComments, replyToComment } from './src/moltbook';
+} from './src/config.js';
+import { logger } from './src/logger.js';
+import { zigmaFetch, getMarketCount } from './src/api-client.js';
+import { postToMoltbook, getMyPosts, getPostComments, replyToComment } from './src/moltbook.js';
 import {
   validateWalletAddress,
   extractMarketId,
@@ -51,7 +51,7 @@ import {
   AnalyzeParamsSchema,
   TrackParamsSchema,
   WalletParamsSchema,
-} from './src/validators';
+} from './src/validators.js';
 import {
   formatSignal,
   formatAnalysis,
@@ -60,13 +60,13 @@ import {
   formatDailyPost,
   formatLeaderboard,
   formatChallenge,
-} from './src/formatters';
+} from './src/formatters.js';
 import {
   SignalSchema,
   MarketAnalysisSchema,
   WalletAnalysisSchema,
   ArbitrageOpportunitySchema,
-} from './src/types';
+} from './src/types.js';
 
 /**
  * Check token tier for a user

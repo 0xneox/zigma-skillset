@@ -3,10 +3,10 @@
  */
 
 import { z } from 'zod';
-import { API_CONFIG, ERROR_CODES } from './config';
-import { logger } from './logger';
-import { cache } from './cache';
-import { ZigmaError, NetworkError, ApiError } from './types';
+import { API_CONFIG, ERROR_CODES } from './config.js';
+import { logger } from './logger.js';
+import { cache } from './cache.js';
+import { ZigmaError, NetworkError, ApiError } from './types.js';
 
 /**
  * Fetch with retry logic and exponential backoff

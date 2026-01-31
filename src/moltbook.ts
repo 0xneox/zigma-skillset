@@ -2,7 +2,7 @@
  * Moltbook API client
  */
 
-import { logger } from './logger';
+import { logger } from './logger.js';
 
 const MOLTBOOK_API_KEY = process.env.MOLTBOOK_API_KEY;
 const MOLTBOOK_BASE_URL = process.env.MOLTBOOK_BASE_URL || 'https://www.moltbook.com/api/v1';

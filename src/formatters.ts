@@ -2,8 +2,8 @@
  * Output formatters for displaying data to users
  */
 
-import type { Signal, MarketAnalysis, WalletAnalysis, ArbitrageOpportunity } from './types';
-import { LIQUIDITY } from './config';
+import type { Signal, MarketAnalysis, WalletAnalysis, ArbitrageOpportunity } from './types.js';
+import { LIQUIDITY } from './config.js';
 
 /**
  * Format signal for display

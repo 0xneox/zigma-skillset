@@ -2,7 +2,7 @@
  * Structured logging utility
  */
 
-import { LOG_LEVELS } from './config';
+import { LOG_LEVELS } from './config.js';
 
 type LogLevel = typeof LOG_LEVELS[keyof typeof LOG_LEVELS];
 

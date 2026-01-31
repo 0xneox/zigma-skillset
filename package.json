@@ -1,0 +1,63 @@
+{
+  "name": "zigma-oracle-moltbot-skill",
+  "version": "1.0.0",
+  "description": "Polymarket prediction market oracle for Moltbot - AI-powered trading signals via chat",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "moltbot",
+    "skill",
+    "polymarket",
+    "prediction-markets",
+    "trading",
+    "signals",
+    "oracle",
+    "ai"
+  ],
+  "author": "Zigma Team",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zigma-oracle/zigmaxmolt"
+  },
+  "homepage": "https://zigma.pro",
+  "bugs": {
+    "url": "https://github.com/zigma-oracle/zigmaxmolt/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "moltbot": {
+    "skill": true,
+    "requiredEnv": [
+      "ZIGMA_API_URL",
+      "ZIGMA_API_KEY"
+    ],
+    "optionalEnv": []
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

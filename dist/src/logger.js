@@ -1,7 +1,7 @@
 /**
  * Structured logging utility
  */
-import { LOG_LEVELS } from './config';
+import { LOG_LEVELS } from './config.js';
 class Logger {
     shouldLog(level) {
         const envLevel = (process.env.LOG_LEVEL || 'info');

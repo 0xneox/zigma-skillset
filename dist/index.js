@@ -14,18 +14,18 @@
  *   zigma challenge - Challenge another agent to a bet
  */
 import { z } from 'zod';
-import { validateConfig } from './src/config';
+import { validateConfig } from './src/config.js';
 // Validate configuration on import (only in runtime, not tests)
 if (process.env.NODE_ENV !== 'test') {
     validateConfig();
 }
-import { TIER_LIMITS, GLOBAL_LIMITS, TOKEN_REQUIREMENTS, } from './src/config';
-import { logger } from './src/logger';
-import { zigmaFetch, getMarketCount } from './src/api-client';
-import { postToMoltbook, getMyPosts, getPostComments, replyToComment } from './src/moltbook';
-import { validateWalletAddress, extractMarketId, validateMarketId, validateThreshold, validateLimit, validateMinEdge, AlphaParamsSchema, ConnectParamsSchema, AnalyzeParamsSchema, TrackParamsSchema, WalletParamsSchema, } from './src/validators';
-import { formatSignal, formatAnalysis, formatWalletAnalysis, formatArbitrageOpportunity, formatDailyPost, formatLeaderboard, formatChallenge, } from './src/formatters';
-import { SignalSchema, MarketAnalysisSchema, WalletAnalysisSchema, ArbitrageOpportunitySchema, } from './src/types';
+import { TIER_LIMITS, GLOBAL_LIMITS, TOKEN_REQUIREMENTS, } from './src/config.js';
+import { logger } from './src/logger.js';
+import { zigmaFetch, getMarketCount } from './src/api-client.js';
+import { postToMoltbook, getMyPosts, getPostComments, replyToComment } from './src/moltbook.js';
+import { validateWalletAddress, extractMarketId, validateMarketId, validateThreshold, validateLimit, validateMinEdge, AlphaParamsSchema, ConnectParamsSchema, AnalyzeParamsSchema, TrackParamsSchema, WalletParamsSchema, } from './src/validators.js';
+import { formatSignal, formatAnalysis, formatWalletAnalysis, formatArbitrageOpportunity, formatDailyPost, formatLeaderboard, formatChallenge, } from './src/formatters.js';
+import { SignalSchema, MarketAnalysisSchema, WalletAnalysisSchema, ArbitrageOpportunitySchema, } from './src/types.js';
 /**
  * Check token tier for a user
  */

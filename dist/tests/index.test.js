@@ -3,7 +3,7 @@
  * Tests for Moltbot skill functionality
  */
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { checkTokenTier } from '../index';
+import { checkTokenTier } from '../index.js';
 // Mock fetch for testing
 global.fetch = vi.fn();
 // Mock context factory

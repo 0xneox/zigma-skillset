@@ -1,7 +1,7 @@
 /**
  * Simple in-memory cache with TTL
  */
-import { GLOBAL_LIMITS } from './config';
+import { GLOBAL_LIMITS } from './config.js';
 class Cache {
     constructor() {
         this.cache = new Map();

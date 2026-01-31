@@ -14,8 +14,8 @@
  *   zigma challenge - Challenge another agent to a bet
  */
 import { z } from 'zod';
-import type { MoltbotContext, UserTier } from './src/types';
-import { AlphaParamsSchema, ConnectParamsSchema, AnalyzeParamsSchema, TrackParamsSchema, WalletParamsSchema } from './src/validators';
+import type { MoltbotContext, UserTier } from './src/types.js';
+import { AlphaParamsSchema, ConnectParamsSchema, AnalyzeParamsSchema, TrackParamsSchema, WalletParamsSchema } from './src/validators.js';
 /**
  * Check token tier for a user
  */

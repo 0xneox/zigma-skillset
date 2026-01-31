@@ -2,8 +2,8 @@
  * Input validators
  */
 import { z } from 'zod';
-import { WALLET_ADDRESS_REGEX, POLYMARKET_URL_PATTERN } from './config';
-import { ValidationError } from './types';
+import { WALLET_ADDRESS_REGEX, POLYMARKET_URL_PATTERN } from './config.js';
+import { ValidationError } from './types.js';
 /**
  * Validate wallet address
  */

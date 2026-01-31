@@ -1,7 +1,7 @@
 /**
  * Output formatters for displaying data to users
  */
-import type { Signal, MarketAnalysis, WalletAnalysis, ArbitrageOpportunity } from './types';
+import type { Signal, MarketAnalysis, WalletAnalysis, ArbitrageOpportunity } from './types.js';
 /**
  * Format signal for display
  */

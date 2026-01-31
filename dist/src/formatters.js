@@ -1,7 +1,7 @@
 /**
  * Output formatters for displaying data to users
  */
-import { LIQUIDITY } from './config';
+import { LIQUIDITY } from './config.js';
 /**
  * Format signal for display
  */
